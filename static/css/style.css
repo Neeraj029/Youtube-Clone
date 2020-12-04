@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+:root{
+    --margin-15: 15px;
+}
+
+#hori{
+    margin-left: 80px;
+    /* height: 1px; */
+    background-color: rgb(212, 211, 211);
+}
+
+.navbar-h{
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    padding: 10px;
+    margin: 2px;
+    background-color: #ffffff;
+    /* border-bottom: 1px solid rgb(173, 173, 173); */
+}
+
+.navright{
+    display: flex;
+    align-items: center;
+}
+
+.post svg{
+    width: 38px;
+    height: 30px;
+}
+
+.middlenav input{display: flex;}
+
+.middlenav{display: flex;}
+
+.navright .profile svg{
+    height: 25px;
+}
+
+.middlenav input{
+    height: 25px;
+    width: 550px;
+    padding: 2px;
+    padding-left: 10px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    border: 1px solid rgb(168, 167, 167);
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid rgb(141, 134, 250);
+    box-shadow: 0 0 5px #719ECE;
+}
+
+
+.middlenav button{
+    height: 31px;
+    width: 50px;
+    background-color: rgba(241, 240, 240, 0.808);
+    border: 1px solid rgb(172, 172, 172);
+    padding-top: 5px;
+    /* : 15px; */
+    transition: 0.3s;
+}
+
+.middlenav button:hover{
+    background-color: #dddddd;
+}
+
+.middlenav{
+    margin: auto;
+}
+
+.post svg{
+    cursor: pointer;
+}
+
+h5{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4rem;
+    font-family: 'Montserrat';
+    font-size: 10px;
+}
+
+.nav-v{
+    margin-left: 3px;
+    width: 70px;
+    position: fixed;
+    /* border-right: 1px solid rgb(156, 156, 156); */
+    height: 600px;
+}
+
+.apps svg{
+    cursor: pointer;
+}
+.profile svg{
+    cursor: pointer;
+}
+
+.nav-v .home svg{
+    margin: auto;
+    margin-top: 12px;
+    height: 20px;
+    /* margin-left: 10px; */
+    fill: rgb(109, 109, 109);
+}
+.nav-v .trending svg{
+    margin-top: 12px;
+    height: 20px;
+    fill: rgb(109, 109, 109);
+
+}
+.nav-v .Subscriptions svg{
+    margin-top: 12px;
+    height: 20px;
+    fill: rgb(109, 109, 109);
+
+}
+.nav-v .library svg{
+    margin-top: 12px;
+    height: 20px;
+    fill: rgb(109, 109, 109);
+
+}
+
+.nav-v .home:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.nav-v .home{
+    /* margin: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-v .trending:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+
+.nav-v .trending{
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+    /* height: fit-content; */
+    width: 100%;
+    text-align: center;
+
+}
+
+.nav-v .library:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.nav-v .library{
+    margin-left: auto;
+    height: 70px;
+    margin-right: auto;
+    /* height: fit-content; */
+    width: 100%;
+    text-align: center;
+}
+
+.nav-v .Subscriptions:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.nav-v .Subscriptions{
+    margin-left: auto;
+    margin-right: auto;
+    height: 70px;
+        /* height: fit-content; */
+    width: 100%;
+    text-align: center;
+
+}
+
+.line{
+    height: 3px;
+    width: 20px;
+    background-color: rgb(104, 103, 103);
+    margin-bottom: 3px;
+}
+
+.menu{
+    /* margin-top: 10px; */
+    margin-right: 25px;
+    margin-left: 15px;
+}
+
+.nav-v .active svg{
+    fill: red;
+}
+
+.active{
+    color: red;
+}
+
+.container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgba(238, 238, 238, 0.568);
+    margin-left: 84px;
+}
+.container [class^='item']{
+    height: 200px;
+    width: 321px;
+    /*background-color: aqua;*/
+    margin: 10px;
+}
+
+
+
+.container div img{
+    width: 100%;
+    height: 85%;
+    cursor: pointer;
+}
+
+.container [class^='item'] .bottom {
+    display: flex;
+    align-items: center;
+}
+
+.container [class^='item'] .bottom svg{
+    height: 8%;
+    width: 8%;
+    margin-right: 10px;
+}
+
+.dropdown{
+    display: none;
+    top: 33px;
+    right: 47px;
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    justify-content:space-between;
+}
+
+.show-dropdown{
+    display: block;
+}
+
+.dropdown .user-profile img{
+    border-radius: 100px;
+    height: 50px;
+}
+
+.user-profile{
+    display: flex;
+    border-bottom: 1px solid rgb(168, 167, 167);
+    width: 100%;
+    height: 60px;
+}
+
+.dropdown .user-profile .user-details{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 300px;
+    margin-left: 25px;
+    font-family: 'roboto';
+    align-content: center;
+    justify-content: center;
+}
+
+.settings{}
+
+
+.settings .channel{
+    display: flex;
+    align-items: center;
+}
+
+.settings .channel svg{
+    height: 25px;
+    width: 25px;
+    fill: #929292;
+    margin-right: 15px;
+
+}
+
+.settings .switch-account{display: flex;align-items: center;}
+
+.settings .switch-account svg{
+    height: 25px;
+    width: 25px;
+    fill: #929292;
+    margin-right: 15px;
+
+}
+.settings .sign-out{display: flex;align-items: center;}
+
+
+.settings .sign-out svg{
+    height: 25px;
+    width: 25px;
+    fill: #929292;
+    margin-right: 15px;
+}
+
+.settings div{
+    margin-top: 12px;
+}
+
+#mymodel{
+    height: 300px;
+    width: 300px;
+    background-color: #2955ff;
+}
+

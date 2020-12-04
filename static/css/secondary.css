@@ -1,0 +1,57 @@
+.signin-btn{
+    width: 75px;
+    height: 35px;
+    background-color: transparent;
+    color: blue;
+    font-size: 15px;
+    border: 2px solid #8998ff;
+    cursor: pointer;
+}
+
+.signin-btn:hover{
+    outline: none !important;
+    border: 2px solid #2955ff;
+    box-shadow: 2px 12px 35px -11px;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-3px);
+}
+
+.signin-btn a{
+    text-decoration: none;
+    color: #2955ff;
+}
+
+.notification{
+    position: absolute;
+    /* top: 396px; */
+    display: flex;
+    top: 600px;
+    right: 10px;
+    padding: 10px;
+    background-color: white;
+    height: 67px;
+    width: 358px;
+    box-shadow: 0px 13px 20px 0px #bab7b7;
+    align-items: center;
+
+}
+
+.hide{
+    display: none;
+}
+
+.close{
+    position: absolute;
+    font-size: 32px;
+    top: 0;
+    right: 12px;
+    cursor: pointer;
+}
+
+.icon svg{
+    width: 35px;
+    height: 77px;
+    fill: #25ff03;
+    margin-right: 20px;
+    cursor: pointer;
+}
